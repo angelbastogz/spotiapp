@@ -8,6 +8,11 @@ import { HomeComponent } from './components/home/home.component';
 import { SearchComponent } from './components/search/search.component';
 import { ArtistComponent } from './components/artist/artist.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { NoimagePipe } from './pipes/noimage.pipe';
+import { CardsComponent } from './components/cards/cards.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
+import { DomSanitizerPipe } from './pipes/dom-sanitizer.pipe';
+import { ErrorAlertComponent } from './components/shared/error-alert/error-alert.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +20,12 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
     HomeComponent,
     SearchComponent,
     ArtistComponent,
-    NavbarComponent
+    NavbarComponent,
+    NoimagePipe,
+    CardsComponent,
+    LoadingComponent,
+    DomSanitizerPipe,
+    ErrorAlertComponent
   ],
   imports: [
     BrowserModule,
